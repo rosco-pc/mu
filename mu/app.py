@@ -40,6 +40,7 @@ from mu.modes import (
     DebugMode,
     PyGameZeroMode,
     ESPMode,
+    P2Mode,
     WebMode,
 )
 from mu.debugger.runner import run as run_debugger
@@ -86,6 +87,7 @@ def setup_modes(editor, view):
         "circuitpython": CircuitPythonMode(editor, view),
         "microbit": MicrobitMode(editor, view),
         "esp": ESPMode(editor, view),
+        "prop2" : P2Mode(editor, view),
         "web": WebMode(editor, view),
         "debugger": DebugMode(editor, view),
     }
